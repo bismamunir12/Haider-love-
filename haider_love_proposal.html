@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100609">
+<title>For Haider ❤️</title>
+<style>
+:root{--bg:#100609;--red:#c51d3a;--rose:#f05b76;--cream:#fff0e8;--muted:#d7b8bd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#45101f 0,#1a080e 38%,#090507 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;min-height:100vh;overflow-x:hidden}
+button{font:inherit}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:34px 18px;position:relative;isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #d94a6244;border-radius:50%;width:min(82vw,560px);aspect-ratio:1;z-index:-1;animation:pulse 5s ease-in-out infinite}
+.hero:after{width:min(68vw,460px);animation-delay:1.2s}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.35}}
+.content{max-width:700px}
+.eyebrow{letter-spacing:.32em;text-transform:uppercase;color:#ef9aaa;font:11px Arial,sans-serif}
+h1{font-size:clamp(42px,11vw,82px);line-height:.98;margin:22px 0 18px;font-weight:normal}
+h1 span{color:var(--rose);font-style:italic}
+.subtitle{font-size:clamp(16px,4vw,20px);line-height:1.7;color:var(--muted);max-width:530px;margin:0 auto}
+.heart{font-size:48px;display:inline-block;margin:22px 0;filter:drop-shadow(0 0 18px #ef345c);animation:beat 1.3s infinite}
+@keyframes beat{50%{transform:scale(1.18)}}
+.btn{border:1px solid #e66b80;background:linear-gradient(135deg,#d92749,#8d1029);color:white;padding:14px 26px;border-radius:999px;cursor:pointer;box-shadow:0 10px 30px #b20d3540;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.btn.secondary{background:transparent;border-color:#81505a;color:#f5cbd1;box-shadow:none}
+.section{padding:70px 18px;text-align:center}
+.section h2{font-size:clamp(30px,7vw,48px);font-weight:normal;margin:0 0 14px}
+.section p{color:var(--muted);line-height:1.7;max-width:590px;margin:0 auto 24px}
+.gallery{max-width:850px;margin:28px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo{min-height:180px;aspect-ratio:4/5;border:1px solid #71303e;border-radius:18px;overflow:hidden;background:linear-gradient(145deg,#38111d,#12080c);display:grid;place-items:center;color:#d7aab2;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo span{padding:16px;font:13px Arial,sans-serif}
+.upload{display:inline-block;margin-top:16px}
+.upload input{display:none}
+.proposal{max-width:700px;margin:0 auto;padding:42px 22px;border:1px solid #8d3448;border-radius:28px;background:linear-gradient(145deg,#260b14dd,#10070bdd);box-shadow:0 20px 70px #0008}
+.proposal h2{font-size:clamp(34px,8vw,58px);line-height:1.1}
+.answers{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+#noBtn{position:relative}
+.hidden{display:none}
+#success{padding-top:25px;animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:30px 16px 45px;color:#b88b94;font:12px Arial,sans-serif;letter-spacing:.08em}
+.floating{position:fixed;bottom:-35px;color:#f04a69;pointer-events:none;z-index:5;animation:floatUp linear forwards;text-shadow:0 0 12px #ed3156}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.photo:last-child:nth-child(odd){grid-column:2}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="content">
+  <div class="eyebrow">A little love story • made just for you</div>
+  <div class="heart">♥</div>
+  <h1>Dear <span>Haider</span>,</h1>
+  <p class="subtitle">Some people make ordinary days feel magical. You are my favourite chapter, my sweetest thought, and the person I want beside me in every tomorrow.</p>
+  <p style="margin-top:30px"><button class="btn" onclick="document.getElementById('ourStory').scrollIntoView({behavior:'smooth'})">Open your surprise ✨</button></p>
+ </div>
+</header>
+
+<section class="section" id="ourStory">
+ <div class="eyebrow">Our little forever</div>
+ <h2>Every love story is beautiful…</h2>
+ <p>But my favourite one is the one I hope we keep writing together. Add your favourite memories below to make this page truly yours.</p>
+ <div class="gallery" id="gallery">
+  <div class="photo"><span>Our favourite memory<br>♡ Photo 1</span></div>
+  <div class="photo"><span>A moment I'll keep forever<br>♡ Photo 2</span></div>
+  <div class="photo"><span>Us, being us<br>♡ Photo 3</span></div>
+ </div>
+ <label class="btn secondary upload">＋ Add our pictures<input id="photos" type="file" accept="image/*" multiple></label>
+ <p style="font-size:12px;margin-top:12px">Choose photos from your phone. They appear on this page while it is open.</p>
+</section>
+
+<section class="section">
+ <div class="proposal">
+  <div class="eyebrow">One question • a thousand feelings</div>
+  <div class="heart">♡</div>
+  <h2>Haider, will you be mine <span style="color:var(--rose);font-style:italic">forever?</span></h2>
+  <p>I can't promise every day will be perfect, but I can promise to keep choosing you, cheering for you, and making beautiful memories with you. ❤️</p>
+  <div class="answers" id="answers">
+   <button class="btn" onclick="sayYes()">YES! ❤️</button>
+   <button class="btn secondary" id="noBtn" onclick="moveNo()">NO 🙈</button>
+  </div>
+  <div id="success" class="hidden">
+   <div class="heart">💍</div>
+   <h2>You've made me the happiest! ❤️</h2>
+   <p>Here's to our story, our smiles, and a thousand tomorrows together. I love you, Haider! 🌹</p>
+   <button class="btn secondary" onclick="shareLove()">Share this moment</button>
+  </div>
+ </div>
+</section>
+<footer>MADE WITH LOVE ♥ JUST FOR HAIDER</footer>
+<script>
+const hearts=['♥','♡','❤','✦'];
+function floatHeart(){
+ const el=document.createElement('span');el.className='floating';el.textContent=hearts[Math.floor(Math.random()*hearts.length)];
+ el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*24)+'px';el.style.animationDuration=(5+Math.random()*5)+'s';
+ document.body.appendChild(el);setTimeout(()=>el.remove(),10500);
+}
+setInterval(floatHeart,650);
+function sayYes(){
+ document.getElementById('answers').classList.add('hidden');
+ document.getElementById('success').classList.remove('hidden');
+ for(let i=0;i<24;i++)setTimeout(floatHeart,i*90);
+}
+function moveNo(){
+ const b=document.getElementById('noBtn');
+ const x=(Math.random()-.5)*150,y=(Math.random()-.5)*90;
+ b.style.transform=`translate(${x}px,${y}px)`;
+}
+document.getElementById('photos').addEventListener('change',e=>{
+ const files=[...e.target.files];const gallery=document.getElementById('gallery');
+ files.forEach(file=>{
+  if(!file.type.startsWith('image/'))return;
+  const reader=new FileReader();reader.onload=ev=>{
+   const card=document.createElement('div');card.className='photo';
+   const img=document.createElement('img');img.src=ev.target.result;img.alt='Our memory';card.appendChild(img);gallery.appendChild(card);
+  };reader.readAsDataURL(file);
+ });
+});
+function shareLove(){
+ if(navigator.share){navigator.share({title:'For Haider ❤️',text:'A little love story, made just for you.'}).catch(()=>{});}
+ else{alert('Take a screenshot of this lovely moment and send it to each other! ❤️');}
+}
+</script>
+</body>
+</html>
